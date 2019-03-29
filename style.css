@@ -1,0 +1,140 @@
+body {
+	margin: 0 auto;
+	background-image: url(image/bg.png);
+	width: 1400px;
+	height: 1400px;
+	
+	
+}
+
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+	background-image: url(image/bg.png);
+}
+.c1 {
+	width: 2000px;
+	margin: 0 auto;
+	align-items: center;
+	background-image: url(image/bg.png);
+}
+
+
+header{
+justify-content: space-between;
+background-image: url(image/bg.png);
+}
+
+header, .content {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap; 
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	background-image: url(image/bg.png)
+	padding: 40px 0;	
+}
+.content{
+	padding: 0;
+	justify-content:center;
+	
+}
+ul 	{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+li {
+	list-style: none; 
+	margin-right: 15px;
+	font-style: Tahoma;
+	font-size: 22px;
+	text-align: center;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+	border: 2px solid transparent;
+}
+
+ul li a:hover{
+	color: white;
+	background: gray;
+	border-radius: 5px;
+	border-top: 2px solid blue;
+}
+
+@media screen and (max-width: 796px){
+	header{
+		flex-direction: column;
+		padding: 20px 0;
+		text-align: center;
+
+	}
+	header img {
+		display: inline-block;
+    	margin-bottom: 20px;
+	}
+	header ul {
+		flex-direction: column;
+	}
+	header ul li {
+		margin: 7px 0 7px 0;
+	}
+	header ul li:last-of-type{
+		margin-bottom: 0;
+	}
+}
+
+.contents {
+	
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+.content img{
+display: inline-block;
+width: 50%;
+margin: 5px;
+transition: .4s;
+cursor: pointer;
+}
+.content img:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 8px 0px black;
+}
+.contents2 {
+	padding:20px 0;
+	box-sizing: border-box; 
+}
+.content2 img{
+display: inline-block;
+width: 32%;
+margin: 5px;
+transition: .4s;
+cursor: pointer;
+}
+
+@media screen and (max-width: 30px){
+	content2{
+		flex-direction: column;
+		padding: 50px 0;
+		text-align: center;
+
+	}
+	content2 img {
+		display: inline-block;
+    	margin-bottom: 20px;
+	}
+	content2 ul {
+		flex-direction: column;
+	}
+	content2 ul li {
+		margin: 7px 0 7px 0;
+	}
+	content2 ul li:last-of-type{
+		margin-bottom: 0;
+	}
+}
